@@ -1,0 +1,82 @@
+# Copyright (C) 2021 WPZOOM
+# This file is distributed under the GPLv2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Secondary Product Image by WPZOOM 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/instagram-widget-by-"
+"wpzoom\n"
+"POT-Creation-Date: 2022-08-19 11:28+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/wpzoom-wc-spi-metabox.php:63
+#, php-format
+msgid ""
+"The 'label' and 'id' values of the 'args' parameter of '%s::%s()' are required"
+msgstr ""
+
+#: includes/wpzoom-wc-spi-metabox.php:157
+#, php-format
+msgid "Set as %3$s"
+msgstr ""
+
+#: includes/wpzoom-wc-spi-metabox.php:396 includes/wpzoom-wc-spi-metabox.php:397
+#, php-format
+msgid "Set %s"
+msgstr ""
+
+#: includes/wpzoom-wc-spi-metabox.php:416
+#, php-format
+msgid "Remove %s"
+msgstr ""
+
+#: includes/wpzoom-wc-spi-metabox.php:477
+msgid "Product Secondary Image"
+msgstr ""
+
+#: includes/wpzoom-wc-spi-metabox.php:478
+msgid "Add second featured image to enable swap effect on hover"
+msgstr ""
+
+#: woocommerce-secondary-product-image.php:150
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be activated."
+msgstr ""
+
+#: woocommerce-secondary-product-image.php:151
+#: woocommerce-secondary-product-image.php:163
+msgid "WooCommerce Secondary Product Image"
+msgstr ""
+
+#: woocommerce-secondary-product-image.php:152
+#: woocommerce-secondary-product-image.php:164
+msgid "WooCommerce"
+msgstr ""
+
+#: woocommerce-secondary-product-image.php:155
+msgid "Activate WooCommerce"
+msgstr ""
+
+#: woocommerce-secondary-product-image.php:162
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed."
+msgstr ""
+
+#: woocommerce-secondary-product-image.php:167
+msgid "Install WooCommerce"
+msgstr ""
