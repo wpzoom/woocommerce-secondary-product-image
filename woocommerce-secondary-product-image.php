@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       WooCommerce Secondary Product Image
  * Plugin URI:        https://www.wpzoom.com/plugins/woocommerce-secondary-product-image/
- * Description:       WooCommerce Secondary Product Image (WCSPI) adds a hover effect that will reveal a secondary product thumbnail to product images on your WooCommerce product listings.
+ * Description:       WooCommerce Secondary Product Image adds a hover effect that will reveal a secondary product thumbnail to product images on your WooCommerce product listings.
  * Version:           1.0.0
  * Requires at least: 5.7
  * Requires PHP:      7.2
