@@ -75,10 +75,11 @@ class WPZOOM_WC_Secondary_Product_Image {
 	 */
 	public function __construct() {
 
-		add_action( 'init', array( $this, 'includes' ) );
+		add_action( 'admin_init', array( $this, 'metabox' ) );
 
 		add_action( 'init', array( $this, 'i18n' ) );
 		add_action( 'plugins_loaded', array( $this, 'on_plugins_loaded' ) );
+		add_action( 'plugins_loaded', array( $this, 'frontend' ) );
 
 	}
 
@@ -97,14 +98,24 @@ class WPZOOM_WC_Secondary_Product_Image {
 	}
 
 	/**
-	 * Includes files
-	 * @method includes
+	 * Includes frontend files
+	 * @method frontend
 	 *
 	 * @return void
 	 */
-	public function includes() {
-
+	public function frontend() {
+		
 		include_once WPZOOM_WC_SPI_PATH . 'includes/wpzoom-wc-spi-frontend.php';
+	}
+
+
+	/**
+	 * Includes metabox files
+	 * @method metabox
+	 *
+	 * @return void
+	 */
+	public function metabox() {
 		include_once WPZOOM_WC_SPI_PATH . 'includes/wpzoom-wc-spi-metabox.php';
 
 	}
