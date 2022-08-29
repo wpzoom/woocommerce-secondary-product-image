@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: WooCommerce Secondary Product Image by WPZOOM 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/instagram-widget-by-"
 "wpzoom\n"
-"POT-Creation-Date: 2022-08-19 11:28+0300\n"
+"POT-Creation-Date: 2022-08-29 15:10+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -53,30 +53,28 @@ msgstr ""
 msgid "Add second featured image to enable swap effect on hover"
 msgstr ""
 
-#: woocommerce-secondary-product-image.php:150
+#: wc-secondary-product-image.php:161
 #, php-format
 msgid "\"%1$s\" requires \"%2$s\" to be activated."
 msgstr ""
 
-#: woocommerce-secondary-product-image.php:151
-#: woocommerce-secondary-product-image.php:163
+#: wc-secondary-product-image.php:162 wc-secondary-product-image.php:174
 msgid "WooCommerce Secondary Product Image"
 msgstr ""
 
-#: woocommerce-secondary-product-image.php:152
-#: woocommerce-secondary-product-image.php:164
+#: wc-secondary-product-image.php:163 wc-secondary-product-image.php:175
 msgid "WooCommerce"
 msgstr ""
 
-#: woocommerce-secondary-product-image.php:155
+#: wc-secondary-product-image.php:166
 msgid "Activate WooCommerce"
 msgstr ""
 
-#: woocommerce-secondary-product-image.php:162
+#: wc-secondary-product-image.php:173
 #, php-format
 msgid "\"%1$s\" requires \"%2$s\" to be installed."
 msgstr ""
 
-#: woocommerce-secondary-product-image.php:167
+#: wc-secondary-product-image.php:178
 msgid "Install WooCommerce"
 msgstr ""

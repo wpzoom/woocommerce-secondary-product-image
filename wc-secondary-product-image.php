@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:       WooCommerce Secondary Product Image
- * Plugin URI:        https://www.wpzoom.com/plugins/woocommerce-secondary-product-image/
- * Description:       WooCommerce Secondary Product Image adds a hover effect that will reveal a secondary product thumbnail to product images on your WooCommerce product listings.
+ * Plugin Name:       WC Secondary Product Image
+ * Plugin URI:        https://www.wpzoom.com/plugins/wc-secondary-product-image/
+ * Description:       WC Secondary Product Image adds a hover effect that will reveal a secondary product thumbnail to product images on your WooCommerce product listings.
  * Version:           1.0.0
  * Requires at least: 5.7
  * Requires PHP:      7.2
@@ -10,7 +10,7 @@
  * Author URI:        https://www.wpzoom.com/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       woocommerce-secondary-product-image
+ * Text Domain:       wc-secondary-product-image
  * Domain Path:       /languages
  */
 
@@ -94,7 +94,7 @@ class WPZOOM_WC_Secondary_Product_Image {
 	 * @access public
 	 */
 	public function i18n() {
-		load_plugin_textdomain( 'woocommerce-secondary-product-image', false, WPZOOM_WC_SPI_PLUGIN_DIR . '/languages' );
+		load_plugin_textdomain( 'wc-secondary-product-image', false, WPZOOM_WC_SPI_PLUGIN_DIR . '/languages' );
 	}
 
 	/**
@@ -158,24 +158,24 @@ class WPZOOM_WC_Secondary_Product_Image {
 		
 			$message = sprintf(
 				/* translators: 1: Plugin name 2: WooCommerce */
-				esc_html__( '"%1$s" requires "%2$s" to be activated.', 'woocommerce-secondary-product-image' ),
-				'<strong>' . esc_html__( 'WooCommerce Secondary Product Image', 'woocommerce-secondary-product-image' ) . '</strong>',
-				'<strong>' . esc_html__( 'WooCommerce', 'woocommerce-secondary-product-image' ) . '</strong>'
+				esc_html__( '"%1$s" requires "%2$s" to be activated.', 'wc-secondary-product-image' ),
+				'<strong>' . esc_html__( 'WooCommerce Secondary Product Image', 'wc-secondary-product-image' ) . '</strong>',
+				'<strong>' . esc_html__( 'WooCommerce', 'wc-secondary-product-image' ) . '</strong>'
 			);
 
-			$button_text = esc_html__( 'Activate WooCommerce', 'woocommerce-secondary-product-image' );
+			$button_text = esc_html__( 'Activate WooCommerce', 'wc-secondary-product-image' );
 			$button_link = wp_nonce_url( 'plugins.php?action=activate&amp;plugin=' . $plugin . '&amp;plugin_status=all&amp;paged=1&amp;s', 'activate-plugin_' . $plugin );
 		
 		} else {
 
 			$message = sprintf(
 				/* translators: 1: Plugin name 2: WooCommerce */
-				esc_html__( '"%1$s" requires "%2$s" to be installed.', 'woocommerce-secondary-product-image' ),
-				'<strong>' . esc_html__( 'WooCommerce Secondary Product Image', 'woocommerce-secondary-product-image' ) . '</strong>',
-				'<strong>' . esc_html__( 'WooCommerce', 'woocommerce-secondary-product-image' ) . '</strong>'
+				esc_html__( '"%1$s" requires "%2$s" to be installed.', 'wc-secondary-product-image' ),
+				'<strong>' . esc_html__( 'WooCommerce Secondary Product Image', 'wc-secondary-product-image' ) . '</strong>',
+				'<strong>' . esc_html__( 'WooCommerce', 'wc-secondary-product-image' ) . '</strong>'
 			);
 
-			$button_text = esc_html__( 'Install WooCommerce', 'woocommerce-secondary-product-image' );
+			$button_text = esc_html__( 'Install WooCommerce', 'wc-secondary-product-image' );
 			$button_link = wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=woocommerce' ), 'install-plugin_woocommerce' );
 
 		}

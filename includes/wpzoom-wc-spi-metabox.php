@@ -393,8 +393,8 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Metabox' ) ) {
 				);
 			}
 			$format_string = '<p class="hide-if-no-js howto" id="set-post-thumbnail-desc">' . $this->desc  . '</p><p class="hide-if-no-js"><a title="%1$s" href="%2$s" id="set-%3$s-%4$s-thumbnail" class="%5$s" data-thumbnail_id="%7$s" data-uploader_title="%1$s" data-uploader_button_text="%1$s">%%s</a></p>';
-			$set_thumbnail_link = sprintf( $format_string, sprintf( esc_attr__( "Set %s" , 'one' ), $this->label ), esc_url($image_library_url), $this->post_type, $this->id, $url_class, $this->label, $thumbnail_id );
-			$content = sprintf( $set_thumbnail_link, sprintf( esc_html__( "Set %s", 'one' ), $this->label ) );
+			$set_thumbnail_link = sprintf( $format_string, sprintf( esc_attr__( "Set %s" , 'wc-secondary-product-image' ), $this->label ), esc_url($image_library_url), $this->post_type, $this->id, $url_class, $this->label, $thumbnail_id );
+			$content = sprintf( $set_thumbnail_link, sprintf( esc_html__( "Set %s", 'wc-secondary-product-image' ), $this->label ) );
 
 			if ($thumbnail_id && get_post($thumbnail_id)) {
 				$old_content_width = $content_width;
@@ -413,7 +413,7 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Metabox' ) ) {
 					
 					$format_string = '<p class="hide-if-no-js"><a href="#" id="remove-%1$s-%2$s-thumbnail" onclick="WpzoomWcSecondaryImage.removeThumbnail(\'%2$s\', \'%1$s\', \'%4$s\');return false;">%3$s</a></p>';
 					
-					$content .= sprintf( $format_string, $this->post_type, $this->id, sprintf( esc_html__( "Remove %s", 'one' ), $this->label ), $ajax_nonce );
+					$content .= sprintf( $format_string, $this->post_type, $this->id, sprintf( esc_html__( "Remove %s", 'wc-secondary-product-image' ), $this->label ), $ajax_nonce );
 				}
 				$content_width = $old_content_width;
 			}
@@ -474,8 +474,8 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Metabox' ) ) {
 
 		new WPZOOM_WC_Secondary_Image_Metabox(
 			array(
-				'label'     => esc_html__( 'Product Secondary Image', 'one' ),
-				'desc'      => esc_html__( 'Add second featured image to enable swap effect on hover', 'one' ),
+				'label'     => esc_html__( 'Product Secondary Image', 'wc-secondary-product-image' ),
+				'desc'      => esc_html__( 'Add second featured image to enable swap effect on hover', 'wc-secondary-product-image' ),
 				'id'        => 'wpzoom-product-secondary-image',
 				'post_type' => 'product',
 			)

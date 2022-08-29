@@ -56,7 +56,7 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 
 			wp_enqueue_style(
 				'wpzoom-wc-spi-style', 
-				WPZOOM_WC_SPI_URL . 'assets/css/woocommerce-secondary-product-image.css', 
+				WPZOOM_WC_SPI_URL . 'assets/css/wc-secondary-product-image.css', 
 				array(), 
 				WPZOOM_WC_SPI_VER 
 			);
