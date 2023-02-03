@@ -474,8 +474,8 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Metabox' ) ) {
 
 		new WPZOOM_WC_Secondary_Image_Metabox(
 			array(
-				'label'     => esc_html__( 'Product Secondary Image', 'wc-secondary-product-image' ),
-				'desc'      => esc_html__( 'Add second featured image to enable swap effect on hover', 'wc-secondary-product-image' ),
+				'label'     => esc_html__( 'Secondary Product Image', 'wc-secondary-product-image' ),
+				'desc'      => esc_html__( 'Add a second featured image to enable the swap effect when hovering over the product image.', 'wc-secondary-product-image' ),
 				'id'        => 'wpzoom-product-secondary-image',
 				'post_type' => 'product',
 			)
