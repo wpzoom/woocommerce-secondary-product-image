@@ -1,20 +1,20 @@
-=== WooCommerce Secondary Product Image ===
+=== Secondary Product Image for WooCommerce ===
 Contributors:       wpzoom
 Donate link:        http://paypal.me/wpzm/10usd
 Author URI:         https://www.wpzoom.com/
 Requires at least:  5.7
-Tested up to:       6.0
+Tested up to:       6.1
 Stable tag:         1.0.0
 Requires PHP:       7.2
 License:            GPLv2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 Tags:               woocommerce, featured image, product, product image, flip, hover, secondary, shop
 
-WooCommerce Secondary Product Image adds a hover effect that will reveal a secondary product thumbnail to product images on your WooCommerce product listings
+Secondary Product Image for WooCommerce adds a hover effect that will reveal a secondary product thumbnail to product images on your WooCommerce product listings
 
 == Description ==
 
-WooCommerce Secondary Product Image adds a hover effect that will reveal a secondary product thumbnail to product images on your WooCommerce product listings
+Secondary Product Image for WooCommerce adds a hover effect that will reveal a secondary product thumbnail to product images on your WooCommerce product listings
 
 [VIEW DEMO](https://demo.wpzoom.com/balance/shop/)
 
