@@ -49,7 +49,8 @@ This section describes how to install the plugin and get it working.
 
 == Screenshots ==
 
-1. Add a 2nd Featured Image for your products
+1. Secondary Product Image for WooCommerce
+2. Add a 2nd Featured Image for your products
 
 
 == Changelog ==
