@@ -4,7 +4,7 @@ Donate link:        http://paypal.me/wpzm/10usd
 Author URI:         https://www.wpzoom.com/
 Requires at least:  5.7
 Tested up to:       6.1
-Stable tag:         1.0.0
+Stable tag:         1.0.1
 Requires PHP:       7.2
 License:            GPLv2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
@@ -35,7 +35,7 @@ Secondary Product Image for WooCommerce adds a hover effect that will reveal a s
 
 * [Grab a free theme](https://profiles.wordpress.org/wpzoom/#content-themes)
 * [WPZOOM website](https://www.wpzoom.com)
-* [GitHub repository](https://github.com/wpzoom/woocommerce-secondary-product-image)
+* [GitHub repository](https://github.com/wpzoom/secondary-product-image-for-woocommerce)
 
 
 == Installation ==
@@ -54,6 +54,9 @@ This section describes how to install the plugin and get it working.
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Minor bug fix
 
 = 1.0.0 =
 * Initial plugin release
