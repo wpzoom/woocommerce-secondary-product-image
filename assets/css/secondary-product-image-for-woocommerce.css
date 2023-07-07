@@ -15,7 +15,9 @@
 	transition: opacity 0.85s, transform 0.85s, visibility 0.85s, -webkit-transform 0.85s;
 	transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
-
+.wpzoom-wc-spi-secondary-img.lazyloaded {
+	opacity:0;
+}
 .woocommerce .products .product:hover .wpzoom-wc-spi-secondary-img {
     opacity: 1;
     visibility: visible;
