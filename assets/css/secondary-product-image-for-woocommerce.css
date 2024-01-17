@@ -1,3 +1,9 @@
+.wpzoom-secondary-image-container {
+	display: none;
+}
+.woocommerce .products .product:hover .wpzoom-secondary-image-container {
+	display: block;
+}
 .wpzoom-wc-spi-has-enabled {
 	position: relative;
 }
@@ -18,6 +24,7 @@
 .wpzoom-wc-spi-secondary-img.lazyloaded {
 	opacity:0;
 }
+
 .woocommerce .products .product:hover .wpzoom-wc-spi-secondary-img {
     opacity: 1;
     visibility: visible;

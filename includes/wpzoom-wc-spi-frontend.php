@@ -28,10 +28,10 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 			if ( ! is_admin() ) {
 				
 				add_action( 'wp_enqueue_scripts', array( $this, 'load_frontend_scripts' ) );
-				
 				add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'output_secondary_product_thumbnail' ), 15 );
-				
 				add_filter( 'post_class', array( $this, 'set_product_post_class' ), 21, 3 );
+
+				add_filter( 'wpzoom_wc_spi_secondary_product_thumbnail', array( $this, 'add_image_wrapper') );
 			}
 
 		}
@@ -65,6 +65,10 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 		public function output_secondary_product_thumbnail() {
 			echo $this->add_secondary_product_thumbnail();
 		}
+
+		public function add_image_wrapper( $image_html ) {
+			return '<div class="wpzoom-secondary-image-container">' . $image_html . '</div>';
+		}
 		
 		/*
 		* Output the secondary product thumbnail.
@@ -85,13 +89,20 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 			$classes          = 'attachment-' . $image_size . ' wpzoom-wc-spi-secondary-img wpzoom-wc-spi-transition';
 			$secondary_img_id = get_post_meta( $product->get_id(), 'product_wpzoom-product-secondary-image_thumbnail_id', true );
 
-			if( !empty( $secondary_img_id ) ) {
-				return wp_get_attachment_image( $secondary_img_id, $image_size, false, array( 'class' => $classes ) );
+			$image_html = '';
+
+			if( ! empty( $secondary_img_id ) ) {
+				$image_html = wp_get_attachment_image( $secondary_img_id, $image_size, false, array( 'class' => $classes ) );
 			}
 			elseif ( $image_ids ) {
 				$secondary_img_id = apply_filters( 'wpzoom_wc_spi_reveal_last_img', false ) ? end( $image_ids ) : reset( $image_ids );				
-				return wp_get_attachment_image( $secondary_img_id, $image_size, false, array( 'class' => $classes ) );
+				$image_html = wp_get_attachment_image( $secondary_img_id, $image_size, false, array( 'class' => $classes ) );
 			}
+			else {
+				return $image_html;
+			}
+
+			return apply_filters( 'wpzoom_wc_spi_secondary_product_thumbnail', $image_html, $secondary_img_id, $image_size, $product );
 		}
 
 
