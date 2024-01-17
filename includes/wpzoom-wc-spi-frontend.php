@@ -60,6 +60,14 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 				array(), 
 				WPZOOM_WC_SPI_VER 
 			);
+
+			wp_enqueue_script(
+				'wpzoom-wc-spi-script', 
+				WPZOOM_WC_SPI_URL . 'assets/js/secondary-product-image-for-woocommerce.js',
+				array(),
+				WPZOOM_WC_SPI_VER,
+				true
+			);
 		}
 
 		public function output_secondary_product_thumbnail() {

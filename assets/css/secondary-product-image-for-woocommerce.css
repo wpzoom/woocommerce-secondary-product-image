@@ -1,8 +1,12 @@
+/* Initially hide the .wpzoom-secondary-image-container */
 .wpzoom-secondary-image-container {
 	display: none;
 }
-.woocommerce .products .product:hover .wpzoom-secondary-image-container {
+/* Add a class for displaying with animation */
+.show-secondary-image {
 	display: block;
+	transition: display 0.85s;
+	transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 .wpzoom-wc-spi-has-enabled {
 	position: relative;
