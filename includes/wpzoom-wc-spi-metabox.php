@@ -13,7 +13,7 @@ if( ! defined( 'ABSPATH' ) )
  */
 
 if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Metabox' ) ) {
-
+	#[AllowDynamicProperties]
 	class WPZOOM_WC_Secondary_Image_Metabox {
 
 		public function __construct( $args = array() ) {
