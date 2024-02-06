@@ -1,6 +1,10 @@
 // Access the product list
 var productList = document.querySelector('.products');
 
+if( ! productList ) {
+	productList = document.querySelector('.products-block-post-template'); 
+}
+
 // Attach mouseover and mouseout event listeners to each product item
 if ( productList ) {
 	productList.addEventListener( 'mouseover', function (event) {

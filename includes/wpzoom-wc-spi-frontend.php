@@ -88,6 +88,12 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 		*/
 		public function add_secondary_product_thumbnail( $size = 'woocommerce_thumbnail', $deprecated1 = 0, $deprecated2 = 0 ) {
 
+			//Check if the theme is a block theme
+			$is_theme_block = wp_is_block_theme();
+			if( $is_theme_block ) {
+				$size = 'woocommerce_single';
+			}
+
 			global $product;
 
 			$image_ids = $this->get_gallery_img_ids( $product );
