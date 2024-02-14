@@ -75,6 +75,16 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 		}
 
 		public function add_image_wrapper( $image_html ) {
+
+			global $product;
+
+			//Check if the theme is a block theme
+			$is_theme_block = wp_is_block_theme();
+
+			if( $is_theme_block ) {
+				$image_html = '<a href="' . esc_url( $product->get_permalink() ) . '">' . $image_html . '</a>';
+			}
+
 			return '<div class="wpzoom-secondary-image-container">' . $image_html . '</div>';
 		}
 		
