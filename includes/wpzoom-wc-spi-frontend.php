@@ -54,6 +54,10 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 		 */
 		public function load_frontend_scripts() {
 
+			if ( wp_is_mobile() ) {
+				return;
+			}
+
 			wp_enqueue_style(
 				'wpzoom-wc-spi-style', 
 				WPZOOM_WC_SPI_URL . 'assets/css/secondary-product-image-for-woocommerce.css',
@@ -97,6 +101,10 @@ if ( ! class_exists( 'WPZOOM_WC_Secondary_Image_Frontend' ) ) {
 		* @return string
 		*/
 		public function add_secondary_product_thumbnail( $size = 'woocommerce_thumbnail', $deprecated1 = 0, $deprecated2 = 0 ) {
+
+			if ( wp_is_mobile() ) {
+				return '';
+			}
 
 			//Check if the theme is a block theme
 			$is_theme_block = wp_is_block_theme();
