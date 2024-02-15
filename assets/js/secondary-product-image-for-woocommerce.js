@@ -10,11 +10,17 @@ if ( productList ) {
 	productList.addEventListener( 'mouseover', function (event) {
 		
 		var target = event.target;
-		var parent = target.parentNode;		
+		var parent = target.closest('.product');
+
+		// If the target is not a product item, return
+		if ( ! parent ) 
+			return;
+
 		var secondaryWrapper = parent.querySelector('.wpzoom-secondary-image-container');
 	
 		// Add the class to show the .wpzoom-secondary-image-container with animation
-		if ( secondaryWrapper ) secondaryWrapper.classList.add('show-secondary-image');
+		if ( secondaryWrapper ) 
+			secondaryWrapper.classList.add('show-secondary-image');
 		
 	});
 }
